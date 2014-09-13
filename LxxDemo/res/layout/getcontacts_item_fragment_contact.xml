@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <LinearLayout
+        android:id="@+id/item_fragment_contact_letter_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_fragment_contact_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/lightgray" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_fragment_contact_head"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/item_fragment_contact_letter_container"
+        android:src="@drawable/brand_default_head" android:contentDescription="@string/chat_head_desc"/>
+
+    <TextView
+        android:id="@+id/item_fragment_contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_fragment_contact_head"
+        android:layout_alignTop="@+id/item_fragment_contact_head"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/item_fragment_contact_head"
+        android:text="@string/chat_name" />
+
+</RelativeLayout>
